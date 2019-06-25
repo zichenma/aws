@@ -12,7 +12,5 @@ exports.doUpload = (req, res) => {
             res.status(500).json({ error: 'error -> ' + err});
         }
         res.json({ message: 'File uploaded successfully! -> keyname = ' + req.file.originalname})
-           
-        }
     })
 }

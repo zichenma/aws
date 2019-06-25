@@ -5,6 +5,10 @@ app.use(bodyParser.urlencoded({
     extended: false
 }))
 app.use(bodyParser.json());
+
+require('./route')(app);
+
+
 app.listen(3000, () => {
     console.log('prot 3000');
 })
